@@ -26,7 +26,7 @@ def main():
         st.success('RISK IS {}'.format(result))
 
 def prediction(age,cpd,tc,sbp,dbp,bmi,hr,glucose):
-    s=clf.predict([[age,cpd,tc,sbp,dbp,bmi,hr,glucose]])
+    s=model.predict([[age,cpd,tc,sbp,dbp,bmi,hr,glucose]])
     if s==1:
         p='HIGH'
     else:
