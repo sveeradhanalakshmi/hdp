@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 import numpy as np
 pickle_in=open('HeartDisP.pkl','rb')
-clf=pickle.load(pickle_in)
+model=pickle.load(pickle_in)
 
 def main():
     html_temp='''
